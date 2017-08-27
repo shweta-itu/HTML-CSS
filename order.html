@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Walk-In Beauty Salon</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	
+<body class="parentcontainer">
+<header>
+<img src="photos/logo.png"</img>
+<h1>Walk-In Beauty Salon</h1>
+</header>
+<hr>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>		
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="new.html">What's New</a></li>
+		<li><a href="products.html">Products</a></li>
+		<li><a href="order.html">Order</a></li>		
+		<li><a href="jobs.html">Jobs</a></li>		
+		<li><a href="multimedia.html">Multimedia</a></li>	
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="support.html ">Customer Support</a></li>
+		<li><a href=" faq.html">FAQ</a></li>
+	</ul>
+</nav>
+<hr>
+<section class="section1 box1">
+<h2>Order Form</h2>
+<form name="order" action="http://itu.lewebcafe.com/csc525/form.php" method="post">
+<fieldset>
+<legend>Enter personal details</legend>
+<p>Please enter the personal information below that is necessary to process your order. All form entries must be completed.<p>
+<table border=2>
+	<tr>
+	   <th align=right>First Name</td>
+	   <td><input type="text" name="first" size="35" maxlength="30" placeholder="John"></td>
+	</tr>
+	<tr>
+	   <th align=right>Last Name</td>
+	   <td><input type="text" name="last" size="35" maxlength="30" placeholder="Smith"></td>
+	</tr>
+	<tr>
+	   <th align=right>Street Address</td>
+	   <td><input type="text" name="address" size="35" maxlength="30" placeholder="123 Stevens creek Blvd"></td>
+	</tr>
+	<tr>
+	   <th align=right>City</td>
+	   <td><input type="text" name="city" size="35" maxlength="30" placeholder="Cupertino"></td>
+	</tr>
+	<tr>
+	   <th align=right>State</td>
+	   <td><input type="text" name="state" size="2" maxlength="2" placeholder="CA">
+	   </td>
+	</tr>
+	<tr>
+	   <th align=right>Zip</td>
+	   <td><input type="number" name="zip" size="9" maxlength="9" placeholder="95014">
+	   </td>
+	</tr>
+	<tr>
+	   <th align=right>Phone</td>
+	   <td><input type="number" name="phone" size="14" maxlength="14" placeholder="408-123-4567"></td>
+	</tr>
+	<tr>
+	   <th align=right>Email</td>
+	   <td><input type="email" name="email" size="35" maxlength="40" placeholder="sjohn@fhda.edu"></td>
+	</tr>
+	<tr>
+	   <th align=right>Credit Card No</td>
+	   <td><input type="number" size="16" name="ccnum" size="16" maxlength="16"
+	   placeholder="1234567890123456"></td>
+	</tr>
+	<tr>
+	   <th align=right>CC type</td>
+	   <td><select name="cctype">
+		<option seelcted>Visa
+		<option>MasterCard
+		<option>American Express
+		<option>Discover
+		</select>
+		</td>
+	</tr>
+	<tr>
+	   <th align=right>CC Expiration</td>
+	   <td><input type="month" name="ccexpire" size="7" maxlength="7"
+	   placeholder="June,2009"></td>
+	</tr>
+	<tr>
+	   <th align=right>Comments</td>
+	   <td><textarea name="comment" cols="35" row="20" wrap="physical">
+	   testing</textarea></td>
+	</tr>
+	</table>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Product Details</legend>
+<p> Please enter the number for quantity for required category</p>
+<table border=2>
+	<tr style="background-color:lightblue; color:deeppink">
+	   <th>Category<th>Description<th>Unit Price<th>
+	   Quantity<th>Total Price
+	</tr>
+	<tr>
+	   <th rowspan=4>Hair Care Gel/Conditioner
+	   <th align=left>Styling Hair Gel for Men 9.6 ounces</th>
+	   <th align=left>$14.24</th>
+	   <td align=right><input type=text size=5 name="qhair1"></td>
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th align=left>Styling Hair Gel for Men 19.2 ounces</th>
+	   <th align=left>$24.24</th>
+	   <td align=right><input type=text size=5 name="qhair2">
+	   <td align=right><input type=none size=5 </td>
+    </td>
+	<tr>
+	   <th align=left> Men's Hair Conditioner 8 ounces</th>
+	   <th align=left>$16.25</th>
+	   <td align=right><input type=text size=5 name="qhair3">
+	   <td align=right><input type=none size=5 </td>
+	   </td>
+	</tr>
+	<tr>
+	   <th align=left> Men's Hair Conditioner 15 ounces</th>
+	   <th align=left>$20.02</th>
+	   <td align=right><input type=text size=5 name="qhair4">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th rowspan=6>Hair Care Shampoo
+	   <th align=left>  Daily Organic Oil Shampoo 16 ounces</th>
+	   <th align=left>$14.95</th>
+   	   <td align=right><input type=text size=5 name="qhair5">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th align=left> Daily Organic Oil Shampoo 32 ounces</th>
+	   <th align=left>$26.24</th>	   
+   	   <td align=right><input type=text size=5 name="qhair6">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th align=left>Oil Infinite Rebalancing Shampoo 13.5 ounces</th>
+	   <th align=left>$8.64</th>	   
+   	   <td align=right><input type=text size=5 name="qhair7">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th align=left>Oil Infinite Rebalancing Shampoo 32 ounces</th>
+	   <th align=left>$16.24</th>	   
+   	   <td align=right><input type=text size=5 name="qhair8">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+	<tr>
+	   <th align=left> Hair Growth Stimulating Shampoo 8 ounces</th>
+	   <th align=left>$43.99</th>
+	   <td align=right><input type=text size=5 name="qhair9">
+	   <td align=right><input type=none size=5 </td>
+    </tr>
+	<tr>
+	   <th align=left> Hair Growth Stimulating Shampoo 15 ounces</th>
+	   <th align=left>$66.05</th>
+	   <td align=right><input type=text size=5 name="qhair10">
+	   <td align=right><input type=none size=5 </td>
+	</tr>
+</table>
+</fieldset>
+<input type="submit" class="button" name="SubmitButton" value="Submit">
+<input type="reset" class="button" name="ResetButton" value="Reset">
+</form>
+</section>
+<hr>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>		
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="new.html">What's New</a></li>
+		<li><a href="products.html">Products</a></li>
+		<li><a href="order.html">Order</a></li>
+		<li><a href="jobs.html">Jobs</a></li>		
+		<li><a href="multimedia.html">Multimedia</a></li>			
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="support.html ">Customer Support</a></li>
+		<li><a href=" faq.html">FAQ</a></li>
+	</ul>
+</nav>
+<hr>
+<div>
+<footer>
+<p>
+© 2016 Shweta Sahu
+</p>
+</footer>
+
+</body>
+</html>
